@@ -6,7 +6,7 @@
 
 namespace SymEngine
 {
-class MathMLPrinter : public BaseVisitor<MathMLPrinter, StrPrinter>
+class SYMENGINE_EXPORT MathMLPrinter : public BaseVisitor<MathMLPrinter, StrPrinter>
 {
 protected:
     std::ostringstream s;
