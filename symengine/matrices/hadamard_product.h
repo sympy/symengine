@@ -34,7 +34,8 @@ public:
     }
 };
 
-SYMENGINE_EXPORT RCP<const MatrixExpr> hadamard_product(const vec_basic &factors);
+SYMENGINE_EXPORT RCP<const MatrixExpr>
+hadamard_product(const vec_basic &factors);
 
 } // namespace SymEngine
 

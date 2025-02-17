@@ -267,13 +267,15 @@ bool is_a_sub(const Basic &b);
 SYMENGINE_EXPORT bool is_same_type(const Basic &a, const Basic &b);
 
 //! Expands `self`
-SYMENGINE_EXPORT RCP<const Basic> expand(const RCP<const Basic> &self, bool deep = true);
+SYMENGINE_EXPORT RCP<const Basic> expand(const RCP<const Basic> &self,
+                                         bool deep = true);
 SYMENGINE_EXPORT void as_numer_denom(const RCP<const Basic> &x,
-                    const Ptr<RCP<const Basic>> &numer,
-                    const Ptr<RCP<const Basic>> &denom);
+                                     const Ptr<RCP<const Basic>> &numer,
+                                     const Ptr<RCP<const Basic>> &denom);
 
-SYMENGINE_EXPORT void as_real_imag(const RCP<const Basic> &x, const Ptr<RCP<const Basic>> &real,
-                  const Ptr<RCP<const Basic>> &imag);
+SYMENGINE_EXPORT void as_real_imag(const RCP<const Basic> &x,
+                                   const Ptr<RCP<const Basic>> &real,
+                                   const Ptr<RCP<const Basic>> &imag);
 
 SYMENGINE_EXPORT RCP<const Basic> rewrite_as_exp(const RCP<const Basic> &x);
 SYMENGINE_EXPORT RCP<const Basic> rewrite_as_sin(const RCP<const Basic> &x);
@@ -291,7 +293,8 @@ void cse(vec_pair &replacements, vec_basic &reduced_exprs,
 
     This prints using: `std::cout << *x;`
 */
-SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out, const SymEngine::Basic &p);
+SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out,
+                                          const SymEngine::Basic &p);
 
 /*! Standard `hash_combine()` function. Example of usage:
 

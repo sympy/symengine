@@ -35,7 +35,8 @@ public:
     }
 }; // URatDict
 
-class SYMENGINE_EXPORT URatPoly : public USymEnginePoly<URatDict, URatPolyBase, URatPoly>
+class SYMENGINE_EXPORT URatPoly
+    : public USymEnginePoly<URatDict, URatPolyBase, URatPoly>
 {
 public:
     IMPLEMENT_TYPEID(SYMENGINE_URATPOLY)

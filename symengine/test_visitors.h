@@ -55,7 +55,8 @@ public:
     tribool apply(const Basic &b);
 };
 
-class SYMENGINE_EXPORT NonPositiveVisitor : public BaseVisitor<NonPositiveVisitor>
+class SYMENGINE_EXPORT NonPositiveVisitor
+    : public BaseVisitor<NonPositiveVisitor>
 {
 private:
     tribool is_nonpositive_;
@@ -99,7 +100,8 @@ public:
     tribool apply(const Basic &b);
 };
 
-class SYMENGINE_EXPORT NonNegativeVisitor : public BaseVisitor<NonNegativeVisitor>
+class SYMENGINE_EXPORT NonNegativeVisitor
+    : public BaseVisitor<NonNegativeVisitor>
 {
 private:
     tribool is_nonnegative_;
@@ -357,7 +359,8 @@ public:
  * all free symbols in b are considered to be variables. All symbols that
  * are not variables will be considered to be constants.
  */
-SYMENGINE_EXPORT bool is_polynomial(const Basic &b, const set_basic &variables = {});
+SYMENGINE_EXPORT bool is_polynomial(const Basic &b,
+                                    const set_basic &variables = {});
 
 class SYMENGINE_EXPORT RationalVisitor : public BaseVisitor<RationalVisitor>
 {

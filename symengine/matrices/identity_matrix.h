@@ -32,7 +32,8 @@ public:
     }
 };
 
-SYMENGINE_EXPORT RCP<const MatrixExpr> identity_matrix(const RCP<const Basic> &n);
+SYMENGINE_EXPORT RCP<const MatrixExpr>
+identity_matrix(const RCP<const Basic> &n);
 
 } // namespace SymEngine
 

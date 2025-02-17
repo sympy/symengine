@@ -44,7 +44,8 @@ public:
 SYMENGINE_EXPORT bool is_zero_vec(const vec_basic &container);
 SYMENGINE_EXPORT bool is_identity_vec(const vec_basic &container);
 
-SYMENGINE_EXPORT RCP<const MatrixExpr> diagonal_matrix(const vec_basic &container);
+SYMENGINE_EXPORT RCP<const MatrixExpr>
+diagonal_matrix(const vec_basic &container);
 
 } // namespace SymEngine
 

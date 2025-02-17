@@ -112,7 +112,8 @@ public:
 
 }; // UIntDict
 
-class SYMENGINE_EXPORT UIntPoly : public USymEnginePoly<UIntDict, UIntPolyBase, UIntPoly>
+class SYMENGINE_EXPORT UIntPoly
+    : public USymEnginePoly<UIntDict, UIntPolyBase, UIntPoly>
 {
 public:
     IMPLEMENT_TYPEID(SYMENGINE_UINTPOLY)

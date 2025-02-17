@@ -311,14 +311,22 @@ inline int unordered_compare(const M &a, const M &b)
 SYMENGINE_EXPORT bool vec_basic_eq_perm(const vec_basic &a, const vec_basic &b);
 
 //! print functions
-SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out, const SymEngine::umap_basic_num &d);
-SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out, const SymEngine::map_basic_num &d);
-SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out, const SymEngine::map_basic_basic &d);
-SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out, const SymEngine::umap_basic_basic &d);
-SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out, const SymEngine::vec_basic &d);
-SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out, const SymEngine::set_basic &d);
-SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out, const SymEngine::map_int_Expr &d);
-SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out, const SymEngine::vec_pair &d);
+SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out,
+                                          const SymEngine::umap_basic_num &d);
+SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out,
+                                          const SymEngine::map_basic_num &d);
+SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out,
+                                          const SymEngine::map_basic_basic &d);
+SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out,
+                                          const SymEngine::umap_basic_basic &d);
+SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out,
+                                          const SymEngine::vec_basic &d);
+SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out,
+                                          const SymEngine::set_basic &d);
+SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out,
+                                          const SymEngine::map_int_Expr &d);
+SYMENGINE_EXPORT std::ostream &operator<<(std::ostream &out,
+                                          const SymEngine::vec_pair &d);
 
 } // namespace SymEngine
 

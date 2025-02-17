@@ -251,17 +251,23 @@ inline bool is_a_Boolean(const Basic &b)
 //! Returns the canonicalized Equality object from a single argument
 SYMENGINE_EXPORT RCP<const Boolean> Eq(const RCP<const Basic> &lhs);
 //! Returns the canonicalized Equality object from the two arguments
-SYMENGINE_EXPORT RCP<const Boolean> Eq(const RCP<const Basic> &lhs, const RCP<const Basic> &rhs);
+SYMENGINE_EXPORT RCP<const Boolean> Eq(const RCP<const Basic> &lhs,
+                                       const RCP<const Basic> &rhs);
 //! Returns the canonicalized Unequality object from the arguments
-SYMENGINE_EXPORT RCP<const Boolean> Ne(const RCP<const Basic> &lhs, const RCP<const Basic> &rhs);
+SYMENGINE_EXPORT RCP<const Boolean> Ne(const RCP<const Basic> &lhs,
+                                       const RCP<const Basic> &rhs);
 //! Convenience function returning LessThan object
-SYMENGINE_EXPORT RCP<const Boolean> Ge(const RCP<const Basic> &lhs, const RCP<const Basic> &rhs);
+SYMENGINE_EXPORT RCP<const Boolean> Ge(const RCP<const Basic> &lhs,
+                                       const RCP<const Basic> &rhs);
 //! Convenience function returning StrictLessThan object
-SYMENGINE_EXPORT RCP<const Boolean> Gt(const RCP<const Basic> &lhs, const RCP<const Basic> &rhs);
+SYMENGINE_EXPORT RCP<const Boolean> Gt(const RCP<const Basic> &lhs,
+                                       const RCP<const Basic> &rhs);
 //! Returns the canonicalized LessThan object from the arguments
-SYMENGINE_EXPORT RCP<const Boolean> Le(const RCP<const Basic> &lhs, const RCP<const Basic> &rhs);
+SYMENGINE_EXPORT RCP<const Boolean> Le(const RCP<const Basic> &lhs,
+                                       const RCP<const Basic> &rhs);
 //! Returns the canonicalized StrictLessThan object from the arguments
-SYMENGINE_EXPORT RCP<const Boolean> Lt(const RCP<const Basic> &lhs, const RCP<const Basic> &rhs);
+SYMENGINE_EXPORT RCP<const Boolean> Lt(const RCP<const Basic> &lhs,
+                                       const RCP<const Basic> &rhs);
 
 SYMENGINE_EXPORT RCP<const Boolean> logical_and(const set_boolean &s);
 SYMENGINE_EXPORT RCP<const Boolean> logical_nand(const set_boolean &s);

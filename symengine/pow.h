@@ -48,13 +48,16 @@ public:
 };
 
 //! \return Pow from `a` and `b`
-SYMENGINE_EXPORT RCP<const Basic> pow(const RCP<const Basic> &a, const RCP<const Basic> &b);
+SYMENGINE_EXPORT RCP<const Basic> pow(const RCP<const Basic> &a,
+                                      const RCP<const Basic> &b);
 
 //! Returns the natural exponential function `E**x = pow(E, x)`
 SYMENGINE_EXPORT RCP<const Basic> exp(const RCP<const Basic> &x);
 
-SYMENGINE_EXPORT void multinomial_coefficients(unsigned m, unsigned n, map_vec_uint &r);
-SYMENGINE_EXPORT void multinomial_coefficients_mpz(unsigned m, unsigned n, map_vec_mpz &r);
+SYMENGINE_EXPORT void multinomial_coefficients(unsigned m, unsigned n,
+                                               map_vec_uint &r);
+SYMENGINE_EXPORT void multinomial_coefficients_mpz(unsigned m, unsigned n,
+                                                   map_vec_mpz &r);
 //! Expand the power expression
 SYMENGINE_EXPORT RCP<const Basic> pow_expand(const RCP<const Pow> &self);
 //! \return square root of `x`

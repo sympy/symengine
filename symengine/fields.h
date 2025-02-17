@@ -544,7 +544,8 @@ public:
     }
 };
 
-class SYMENGINE_EXPORT GaloisField : public UIntPolyBase<GaloisFieldDict, GaloisField>
+class SYMENGINE_EXPORT GaloisField
+    : public UIntPolyBase<GaloisFieldDict, GaloisField>
 {
 public:
     IMPLEMENT_TYPEID(SYMENGINE_GALOISFIELD)

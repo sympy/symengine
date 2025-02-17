@@ -2,7 +2,7 @@
 #include <symengine/add.h>
 #include <symengine/mul.h>
 #include <symengine/constants.h>
-#include <symengine/finitediff.h> 
+#include <symengine/finitediff.h>
 
 namespace SymEngine
 {

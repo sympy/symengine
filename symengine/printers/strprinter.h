@@ -200,7 +200,8 @@ public:
     std::string apply(const Basic &b);
 };
 
-class SYMENGINE_EXPORT JuliaStrPrinter : public BaseVisitor<JuliaStrPrinter, StrPrinter>
+class SYMENGINE_EXPORT JuliaStrPrinter
+    : public BaseVisitor<JuliaStrPrinter, StrPrinter>
 {
 public:
     using StrPrinter::bvisit;

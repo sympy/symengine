@@ -159,7 +159,8 @@ public:
  *
  *  @relatesalso Add
  */
-SYMENGINE_EXPORT RCP<const Basic> add(const RCP<const Basic> &a, const RCP<const Basic> &b);
+SYMENGINE_EXPORT RCP<const Basic> add(const RCP<const Basic> &a,
+                                      const RCP<const Basic> &b);
 
 /**
  *  @brief Sums the elements of a vector.
@@ -178,7 +179,8 @@ SYMENGINE_EXPORT RCP<const Basic> add(const vec_basic &a);
  *
  *  @relatesalso Add.
  */
-SYMENGINE_EXPORT RCP<const Basic> sub(const RCP<const Basic> &a, const RCP<const Basic> &b);
+SYMENGINE_EXPORT RCP<const Basic> sub(const RCP<const Basic> &a,
+                                      const RCP<const Basic> &b);
 
 } // namespace SymEngine
 

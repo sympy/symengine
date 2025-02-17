@@ -225,7 +225,8 @@ public:
     }
 };
 
-SYMENGINE_EXPORT RCP<const Basic> coeff(const Basic &b, const Basic &x, const Basic &n);
+SYMENGINE_EXPORT RCP<const Basic> coeff(const Basic &b, const Basic &x,
+                                        const Basic &n);
 
 SYMENGINE_EXPORT set_basic free_symbols(const Basic &b);
 

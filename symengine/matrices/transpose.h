@@ -32,7 +32,8 @@ public:
     }
 };
 
-SYMENGINE_EXPORT RCP<const MatrixExpr> transpose(const RCP<const MatrixExpr> &arg);
+SYMENGINE_EXPORT RCP<const MatrixExpr>
+transpose(const RCP<const MatrixExpr> &arg);
 } // namespace SymEngine
 
 #endif

@@ -16,8 +16,9 @@ SYMENGINE_EXPORT std::string ascii_art();
 SYMENGINE_EXPORT std::string mathml(const Basic &x);
 
 SYMENGINE_EXPORT std::string latex(const Basic &x);
-SYMENGINE_EXPORT std::string latex(const DenseMatrix &x, const unsigned max_rows = 20,
-                  const unsigned max_cols = 12);
+SYMENGINE_EXPORT std::string latex(const DenseMatrix &x,
+                                   const unsigned max_rows = 20,
+                                   const unsigned max_cols = 12);
 
 SYMENGINE_EXPORT std::string ccode(const Basic &x);
 SYMENGINE_EXPORT std::string c89code(const Basic &x);

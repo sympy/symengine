@@ -132,10 +132,12 @@ public:
     }
 };
 //! Multiplication
-SYMENGINE_EXPORT RCP<const Basic> mul(const RCP<const Basic> &a, const RCP<const Basic> &b);
+SYMENGINE_EXPORT RCP<const Basic> mul(const RCP<const Basic> &a,
+                                      const RCP<const Basic> &b);
 SYMENGINE_EXPORT RCP<const Basic> mul(const vec_basic &a);
 //! Division
-SYMENGINE_EXPORT RCP<const Basic> div(const RCP<const Basic> &a, const RCP<const Basic> &b);
+SYMENGINE_EXPORT RCP<const Basic> div(const RCP<const Basic> &a,
+                                      const RCP<const Basic> &b);
 //! Negation
 SYMENGINE_EXPORT RCP<const Basic> neg(const RCP<const Basic> &a);
 

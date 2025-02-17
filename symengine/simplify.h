@@ -8,7 +8,8 @@
 namespace SymEngine
 {
 
-class SYMENGINE_EXPORT SimplifyVisitor : public BaseVisitor<SimplifyVisitor, TransformVisitor>
+class SYMENGINE_EXPORT SimplifyVisitor
+    : public BaseVisitor<SimplifyVisitor, TransformVisitor>
 {
 private:
     std::pair<RCP<const Basic>, RCP<const Basic>>

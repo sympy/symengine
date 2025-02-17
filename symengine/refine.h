@@ -8,7 +8,8 @@
 namespace SymEngine
 {
 
-class SYMENGINE_EXPORT RefineVisitor : public BaseVisitor<RefineVisitor, TransformVisitor>
+class SYMENGINE_EXPORT RefineVisitor
+    : public BaseVisitor<RefineVisitor, TransformVisitor>
 {
 private:
     const Assumptions *assumptions_;

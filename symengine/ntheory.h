@@ -31,7 +31,8 @@ void gcd_ext(const Ptr<RCP<const Integer>> &g, const Ptr<RCP<const Integer>> &s,
 //! modulo round toward zero
 SYMENGINE_EXPORT RCP<const Integer> mod(const Integer &n, const Integer &d);
 //! \return quotient round toward zero when `n` is divided by `d`
-SYMENGINE_EXPORT RCP<const Integer> quotient(const Integer &n, const Integer &d);
+SYMENGINE_EXPORT RCP<const Integer> quotient(const Integer &n,
+                                             const Integer &d);
 //! \return modulo and quotient round toward zero
 SYMENGINE_EXPORT
 void quotient_mod(const Ptr<RCP<const Integer>> &q,
@@ -40,7 +41,8 @@ void quotient_mod(const Ptr<RCP<const Integer>> &q,
 //! modulo round toward -inf
 SYMENGINE_EXPORT RCP<const Integer> mod_f(const Integer &n, const Integer &d);
 //! \return quotient round toward -inf when `n` is divided by `d`
-SYMENGINE_EXPORT RCP<const Integer> quotient_f(const Integer &n, const Integer &d);
+SYMENGINE_EXPORT RCP<const Integer> quotient_f(const Integer &n,
+                                               const Integer &d);
 //! \return modulo and quotient round toward -inf
 SYMENGINE_EXPORT
 void quotient_mod_f(const Ptr<RCP<const Integer>> &q,
@@ -84,28 +86,35 @@ SYMENGINE_EXPORT bool divides(const Integer &a, const Integer &b);
 
 //! Factorization
 //! \param B1 is only used when `n` is factored using gmp-ecm
-SYMENGINE_EXPORT int factor(const Ptr<RCP<const Integer>> &f, const Integer &n, double B1 = 1.0);
+SYMENGINE_EXPORT int factor(const Ptr<RCP<const Integer>> &f, const Integer &n,
+                            double B1 = 1.0);
 
 //! Factor using trial division.
 //! \return 1 if a non-trivial factor is found, otherwise 0.
-SYMENGINE_EXPORT int factor_trial_division(const Ptr<RCP<const Integer>> &f, const Integer &n);
+SYMENGINE_EXPORT int factor_trial_division(const Ptr<RCP<const Integer>> &f,
+                                           const Integer &n);
 
 //! Factor using lehman's methods
-SYMENGINE_EXPORT int factor_lehman_method(const Ptr<RCP<const Integer>> &f, const Integer &n);
+SYMENGINE_EXPORT int factor_lehman_method(const Ptr<RCP<const Integer>> &f,
+                                          const Integer &n);
 
 //! Factor using Pollard's p-1 method
 SYMENGINE_EXPORT int factor_pollard_pm1_method(const Ptr<RCP<const Integer>> &f,
-                              const Integer &n, unsigned B = 10,
-                              unsigned retries = 5);
+                                               const Integer &n,
+                                               unsigned B = 10,
+                                               unsigned retries = 5);
 
 //! Factor using Pollard's rho methods
 SYMENGINE_EXPORT int factor_pollard_rho_method(const Ptr<RCP<const Integer>> &f,
-                              const Integer &n, unsigned retries = 5);
+                                               const Integer &n,
+                                               unsigned retries = 5);
 
 //! Find prime factors of `n`
-SYMENGINE_EXPORT void prime_factors(std::vector<RCP<const Integer>> &primes, const Integer &n);
+SYMENGINE_EXPORT void prime_factors(std::vector<RCP<const Integer>> &primes,
+                                    const Integer &n);
 //! Find multiplicities of prime factors of `n`
-SYMENGINE_EXPORT void prime_factor_multiplicities(map_integer_uint &primes, const Integer &n);
+SYMENGINE_EXPORT void prime_factor_multiplicities(map_integer_uint &primes,
+                                                  const Integer &n);
 
 //! Computes the Bernoulli number Bn as an exact fraction, for an isolated
 //! integer n
@@ -114,11 +123,12 @@ SYMENGINE_EXPORT RCP<const Number> bernoulli(unsigned long n);
 SYMENGINE_EXPORT RCP<const Number> harmonic(unsigned long n, long m = 1);
 //! Computes a primitive root. Returns false if no primitive root exists.
 // Primitive root calculated is the smallest when n is prime.
-SYMENGINE_EXPORT bool primitive_root(const Ptr<RCP<const Integer>> &g, const Integer &n);
+SYMENGINE_EXPORT bool primitive_root(const Ptr<RCP<const Integer>> &g,
+                                     const Integer &n);
 //! Computes all primitive roots less than n. Returns false if no primitive root
 //! exists.
-SYMENGINE_EXPORT void primitive_root_list(std::vector<RCP<const Integer>> &roots,
-                         const Integer &n);
+SYMENGINE_EXPORT void
+primitive_root_list(std::vector<RCP<const Integer>> &roots, const Integer &n);
 //! Euler's totient function
 SYMENGINE_EXPORT RCP<const Integer> totient(const RCP<const Integer> &n);
 //! Carmichael function
@@ -163,7 +173,8 @@ SYMENGINE_EXPORT vec_integer_class quadratic_residues(const Integer &a);
 //! Returns true if 'a' is a quadratic residue of 'p'
 SYMENGINE_EXPORT bool is_quad_residue(const Integer &a, const Integer &p);
 //! Returns true if 'a' is a nth power residue of 'mod'
-SYMENGINE_EXPORT bool is_nth_residue(const Integer &a, const Integer &n, const Integer &mod);
+SYMENGINE_EXPORT bool is_nth_residue(const Integer &a, const Integer &n,
+                                     const Integer &mod);
 //! Mobius Function
 // mu(n) = 1 if n is a square-free positive integer with an even number of prime
 // factors

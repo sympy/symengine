@@ -47,7 +47,8 @@ public:
 
 using p_expr = piranha::polynomial<Expression, piranha::monomial<int>>;
 // Univariate Rational Coefficient Power SeriesBase using Piranha
-class SYMENGINE_EXPORT UPSeriesPiranha : public SeriesBase<p_expr, Expression, UPSeriesPiranha>
+class SYMENGINE_EXPORT UPSeriesPiranha
+    : public SeriesBase<p_expr, Expression, UPSeriesPiranha>
 {
 public:
     UPSeriesPiranha(const p_expr p, const std::string varname,

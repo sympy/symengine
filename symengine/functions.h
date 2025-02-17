@@ -527,7 +527,8 @@ public:
 };
 
 //! Canonicalize ATan2:
-SYMENGINE_EXPORT RCP<const Basic> atan2(const RCP<const Basic> &num, const RCP<const Basic> &den);
+SYMENGINE_EXPORT RCP<const Basic> atan2(const RCP<const Basic> &num,
+                                        const RCP<const Basic> &den);
 
 class SYMENGINE_EXPORT Log : public OneArgFunction
 {
@@ -547,7 +548,8 @@ public:
 //! Returns the Natural Logarithm from argument `arg`
 SYMENGINE_EXPORT RCP<const Basic> log(const RCP<const Basic> &arg);
 //! \return Log from argument `arg` wrt base `b`
-SYMENGINE_EXPORT RCP<const Basic> log(const RCP<const Basic> &arg, const RCP<const Basic> &b);
+SYMENGINE_EXPORT RCP<const Basic> log(const RCP<const Basic> &arg,
+                                      const RCP<const Basic> &b);
 
 class SYMENGINE_EXPORT LambertW : public OneArgFunction
 {
@@ -608,7 +610,8 @@ public:
 };
 
 //! Create a new Zeta instance:
-SYMENGINE_EXPORT RCP<const Basic> zeta(const RCP<const Basic> &s, const RCP<const Basic> &a);
+SYMENGINE_EXPORT RCP<const Basic> zeta(const RCP<const Basic> &s,
+                                       const RCP<const Basic> &a);
 SYMENGINE_EXPORT RCP<const Basic> zeta(const RCP<const Basic> &s);
 
 class SYMENGINE_EXPORT Dirichlet_eta : public OneArgFunction
@@ -664,8 +667,10 @@ public:
 };
 
 //! Create a new FunctionSymbol instance:
-SYMENGINE_EXPORT RCP<const Basic> function_symbol(std::string name, const RCP<const Basic> &arg);
-SYMENGINE_EXPORT RCP<const Basic> function_symbol(std::string name, const vec_basic &arg);
+SYMENGINE_EXPORT RCP<const Basic> function_symbol(std::string name,
+                                                  const RCP<const Basic> &arg);
+SYMENGINE_EXPORT RCP<const Basic> function_symbol(std::string name,
+                                                  const vec_basic &arg);
 
 /*! Use this class SYMENGINE_EXPORT to define custom functions by overriding
  *  the defaut behaviour for create, eval, diff, __eq__, compare etc.
@@ -1008,7 +1013,8 @@ public:
 };
 
 //! Canonicalize KroneckerDelta:
-SYMENGINE_EXPORT RCP<const Basic> kronecker_delta(const RCP<const Basic> &i, const RCP<const Basic> &j);
+SYMENGINE_EXPORT RCP<const Basic> kronecker_delta(const RCP<const Basic> &i,
+                                                  const RCP<const Basic> &j);
 
 class SYMENGINE_EXPORT LeviCivita : public MultiArgFunction
 {
@@ -1124,7 +1130,8 @@ public:
 };
 
 //! Canonicalize LowerGamma:
-SYMENGINE_EXPORT RCP<const Basic> lowergamma(const RCP<const Basic> &s, const RCP<const Basic> &x);
+SYMENGINE_EXPORT RCP<const Basic> lowergamma(const RCP<const Basic> &s,
+                                             const RCP<const Basic> &x);
 
 class SYMENGINE_EXPORT UpperGamma : public TwoArgFunction
 {
@@ -1143,7 +1150,8 @@ public:
 };
 
 //! Canonicalize UpperGamma:
-SYMENGINE_EXPORT RCP<const Basic> uppergamma(const RCP<const Basic> &s, const RCP<const Basic> &x);
+SYMENGINE_EXPORT RCP<const Basic> uppergamma(const RCP<const Basic> &s,
+                                             const RCP<const Basic> &x);
 
 class SYMENGINE_EXPORT LogGamma : public OneArgFunction
 {
@@ -1199,7 +1207,8 @@ public:
 };
 
 //! Canonicalize Beta:
-SYMENGINE_EXPORT RCP<const Basic> beta(const RCP<const Basic> &x, const RCP<const Basic> &y);
+SYMENGINE_EXPORT RCP<const Basic> beta(const RCP<const Basic> &x,
+                                       const RCP<const Basic> &y);
 
 class SYMENGINE_EXPORT PolyGamma : public TwoArgFunction
 {
@@ -1231,7 +1240,8 @@ public:
 };
 
 //! Canonicalize PolyGamma
-SYMENGINE_EXPORT RCP<const Basic> polygamma(const RCP<const Basic> &n, const RCP<const Basic> &x);
+SYMENGINE_EXPORT RCP<const Basic> polygamma(const RCP<const Basic> &n,
+                                            const RCP<const Basic> &x);
 
 SYMENGINE_EXPORT RCP<const Basic> digamma(const RCP<const Basic> &x);
 

@@ -79,7 +79,8 @@ RCP<const Set> solve_poly_quartic(const vec_basic &coeffs,
  * non-linear;
  * true otherwise.
  */
-SYMENGINE_EXPORT bool is_a_LinearArgTrigEquation(const Basic &b, const Symbol &x);
+SYMENGINE_EXPORT bool is_a_LinearArgTrigEquation(const Basic &b,
+                                                 const Symbol &x);
 
 /* returns Inverse of a complex equation `fX = gY` wrt symbol `sym`.
  * It is like a solver developed specifically to solve equations of the
@@ -99,10 +100,12 @@ RCP<const Set> invertComplex(const RCP<const Basic> &fX,
 // Solver for System of Equations
 // TODO : solve systems that have infinitely many solutions or no solution.
 // Input as an Augmented Matrix. (A|b) to solve `Ax=b`.
-SYMENGINE_EXPORT vec_basic linsolve(const DenseMatrix &system, const vec_sym &syms);
+SYMENGINE_EXPORT vec_basic linsolve(const DenseMatrix &system,
+                                    const vec_sym &syms);
 
 // Input as a vector of linear equations.
-SYMENGINE_EXPORT vec_basic linsolve(const vec_basic &system, const vec_sym &syms);
+SYMENGINE_EXPORT vec_basic linsolve(const vec_basic &system,
+                                    const vec_sym &syms);
 
 // converts system of linear equations into Matrix form.
 // first Matrix is for `A` and second one is for `b`.
