@@ -119,7 +119,7 @@ std::string to_string(const T &value)
 #endif
 }
 
-static struct ConstantInitializer {
+static struct SYMENGINE_EXPORT ConstantInitializer {
     ConstantInitializer();
     ~ConstantInitializer();
 } constantInitializer; // static initializer for every translation unit
